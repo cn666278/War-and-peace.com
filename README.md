@@ -13,7 +13,7 @@
 	Many thanks for lecturer Miss. Norma Liyana Binti Omar for her teaching me with such a lot knowleadge about 
 	front-end programming, which includes HTML, CSS, JavaScript, PHP..
 
-	I personally prefer front-end programming to boring and boring back-end programming,
+	I personally prefer front-end programming to boring than boring back-end programming,
 	because I think it's imaginative and full of design rather than just plain old code and algorithms. 
 
 	In 2021, I participated in XMUM Hackathon and learned myself Figma for prototype design.
