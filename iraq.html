@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Iraq War Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 25px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 12px; /* Some padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+</style>
+</head>
+<body>
+
+  <!-- back button -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="assignment1.html" class="w3-bar-item w3-button">War and Peace</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="blog.html" class="w3-bar-item w3-button">Blog</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="img/iraq1.png" alt="Hamburger Catering" width="1600" height="800">
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small" style="padding-top: 300px!important;">
+     <img src="img/iraq3.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="700" height="900">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Iraq War(2003-2011)</h1><br><br><br>
+      <h4 class="w3-center">The spark</h4><br>
+      <hr>
+      <p class="w3-large">
+      After the September 11 terrorist attacks in the United States, President Bush declared war on what the United States government considers "terrorism" and included Iraq and other countries in the "Axis of Evil". In 2002, the outbreak of the Iraq crisis, the United Nations passed resolution 1441, the United Nations weapons inspection mission returned to Iraq, but it did not find weapons of mass destruction in Iraq. In October 2002, congress passed the Iraq Resolution, authorizing the president to "take any necessary measures" against Iraq.</p>
+      <p class="w3-large">
+      In January 2003, Americans generally favored a diplomatic solution to Iraq, according to a poll. Soon, however, many Americans began to support Bush's war plan and to believe that Saddam hussein had weapons of mass destruction. In February 2003, 64 percent of Americans approved of Bush taking military action to remove Saddam Hussein from power. On March 17, 2003, US President George W. Bush issued a 48-hour ultimatum to Iraq, giving Saddam Hussein and his sons 48 hours to leave Iraq or face war. On March 18, 2003, the British House of Commons debated whether to support the invasion of Iraq. The vote was 412 in favor of the war and 149 against.      </p><br>
+
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+
+      <h4 class="w3-center">Beginning</h4><br>
+      <hr>
+      <p class="w3-large">
+      The Multinational Force in Iraq consists of 120,000 U.S. troops, 45,000 British, more than 2,000 Australian, 200 Polish and about 50,000 Iraqi troops. They launched military strikes on Iraq from American bases in Kuwait. March 20, 2003, the multinational force increased to 300,000 troops, officially declared the war on Iraq, marking the beginning of the Iraq War.
+      </p>
+      <p class="w3-large">After two weeks fighting, British forces first took control of Basra, an oil hub in southern Iraq and the country's second largest city. Many international humanitarian organizations have delivered relief supplies to Iraq. Most of these aid supplies enter Iraq from Umm Qisar, which is controlled by Saddam Hussein, while a small part enters Iraq from Kuwait, which is controlled by the coalition forces.</p>
+      <p class="w3-large">About three weeks after the start of the war, U.S. forces were able to enter the Baghdad neighborhood without encountering any major clashes during the siege. As Iraqi officers suddenly disappeared and disappeared, large numbers of Iraqi troops surrendered to American forces. Iraqi cities, such as Baghdad and Basra, fell into anarchy. Saddam hussein's government forces looted and burned everywhere until the arrival of American troops to maintain security. It is estimated that tens of thousands of cultural relics were destroyed by Saddam Hussein's government forces.</p><br>
+    </div>
+
+    <div class="w3-col m6 w3-padding-large w3-hide-small" style="padding-top: 110px!important;">
+     <img src="img/iraq5.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="700" height="900">
+     <p></p>
+     <img src="img/iraq4.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="700" height="900">
+     <!-- <img src="ukr2.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="700" height="900"> -->
+   </div><br>
+
+    <div class="w3-col m6 w3-padding-large w3-hide-small" style="padding-top: 170px!important;">
+     <img src="img/iraq6.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="700" height="900">
+     <p></p><br>
+     <img src="img/iraq7.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="700" height="900">
+
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <p></p><br><br>
+      <h4 class="w3-center">Influence</h4><br>
+      <hr>
+      <p class="w3-large">
+      On August 18, 2010, the last American combat troops crossed Iraq's border with Kuwait, and the United States unilaterally declared the war in Iraq over.
+      </p>
+      <p class="w3-large">
+      After unilaterally declaring an end to the war, the United States still had more than 34,000 troops in Iraq as of October 2011, responsible for protecting U.S. bases and training security forces for the pro-American Iraqi government. Attacks on U.S. troops also continued, with at least one U.S. soldier killed every month until August 2011, when Iraq's Shiite Muslim militant group announced a moratorium on attacks to help the withdrawal of U.S. troops. When the US military and the Iraqi government negotiated the extension of the 2012 agreement, they wanted to keep more than 3,000 troops and to keep future American troops outside the jurisdiction of Iraqi law, but the Iraqi government did not agree. Therefore, then-Us President Barack Obama announced on October 22 that all US troops in Iraq would be withdrawn by the end of 2011. The number of U.S. soldiers killed in Iraq has reached 4,476, and one more has been added since the announcement of the complete withdrawal of U.S. troops.
+      </p>
+      <p class="w3-large">
+      In a meeting with Visiting Iraqi Prime Minister Nouri al-Maliki on December 13, 2011, U.S. President Barack Obama announced that "after nearly nine years, our war in Iraq comes to an end this month," and declared that the United States was Iraq's "strong and enduring partner." U.S. Defense Secretary Leon Panetta attended a flag-lowering ceremony for U.S. troops in Iraq on Sunday, marking the official end of the nine-year war, with thousands of remaining troops expected to come home in the coming days. It is reported that after the formal withdrawal of U.S. troops, the U.S. embassy in Iraq still has about 10,000 personnel, most of them armed security personnel, equipped with armored vehicles and other weapons, the United States plans to deploy an additional 5,000 armed security personnel in 2012, making the U.S. Embassy the largest armed diplomatic mission in the world.      </p>
+      <p class="w3-large">
+      On December 18, 2011, the War in Iraq officially ended.
+    </div>
+
+  </div>
+
+  <hr>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a title="WAR AND PEACE" target="_blank" class="w3-hover-text-green">war and pease</a></p>
+</footer>
+
+</body>
+</html>

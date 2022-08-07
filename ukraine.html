@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ukraine War Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+  body {
+    font-family: "Times New Roman", Georgia, Serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+  }
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 25px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 12px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+</style>
+</head>
+<body>
+
+  <!-- back button -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+      <a href="assignment1.html" class="w3-bar-item w3-button">War and Peace</a>
+      <!-- Right-sided navbar links. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="#about" class="w3-bar-item w3-button">About</a>
+        <a href="blog.html" class="w3-bar-item w3-button">Blog</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      </div>
+    </div>
+  </div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="ukr.png" alt="Hamburger Catering" width="1600" height="800">
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small" style="padding-top: 250px!important;">
+     <img src="img/ukr7.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="700" height="900">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Ukraine War(2022-)</h1><br><br><br>
+      <h4 class="w3-center">Beginning</h4><br>
+      <hr>
+      <p class="w3-large">
+      The trouble in eastern Ukraine began in 2014. Then-president Viktor Yanukovych was ousted in a "color revolution" that brought a pro-Western government to power in Ukraine. The Crimean region voted to secede from Ukraine and join Russia in a referendum. The "Donetsk People's Republic" and "Luhansk People's Republic" were declared after clashes broke out between militias and Ukrainian government forces in the Donbass region, where Donetsk and Luhansk prefectures are located.</p>
+      <p class="w3-large">
+      The conflict in eastern Ukraine reached internationally brokered ceasefire agreements in September 2014 and February 2015 in Minsk, the capital of Belarus. Since then large-scale armed clashes have been contained, but skirmishes have broken out.</p>
+      <p class="w3-large">
+      Biden has taken a tough line on Russia since taking office, supporting Ukraine's membership in the North Atlantic Treaty Organization and increasing military aid to the Ukrainian government. In this context, the Ukrainian government has said that it will "take back" Crimea by force and end Russia's "aggression" in eastern Ukraine.</p>
+      <p class="w3-large">
+      Since November, the Ukrainian and U.S. governments have said that Russia has amassed a large number of troops along its border with Ukraine and could "invade" Ukraine. The US government has been ramping up the "Russian threat" of an imminent "invasion" of Ukraine.
+        <!-- <span class="w3-tag w3-light-grey">seasonal</span> -->
+      </p><br>
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+
+      <h4 class="w3-center">Situation changes</h4><br>
+      <hr>
+      <p class="w3-large">
+        The Russian side has repeatedly denied the "invasion", stressing that NATO activities threaten Russia's border security. On December 15, Last year, Russia submitted to the United States and NATO respectively the draft bilateral security assurance agreement, the Russian side of the security demands of the proposal, including NATO to stop further eastward expansion, commitment not to include Ukraine as a member, the United States will not establish military bases on the territory of non-NATO member states of the former Soviet Union.</p>
+        <p class="w3-large">
+        On January 26, the United States and NATO submitted written replies to Russia on security assurances, rejecting core demands of not absorbing Ukraine and not deploying offensive weapons near the Russian border. On The same day, Putin criticized the West for ignoring Russia's "fundamental concerns" about NATO's eastward expansion.</p>
+        <p class="w3-large">
+        Meanwhile, the U.S. government has stepped up military assistance to Ukraine. In December, the Biden administration approved an additional $200 million in security assistance to Ukraine. On January 24, NATO decided to send more troops, ships and aircraft to its eastern European members. On February 2nd the US announced that it would deploy a total of 3,000 troops to Germany, Poland and Romania.</p>
+        <p class="w3-large">
+        The Russian government has launched a series of military exercises. On January 17, Russian troops arrived in Belarus to take part in a combat readiness inspection of the Rapid reaction Force of the Russia-Belarus National Union. Russia and Belarus kicked off the "Alliance Resolution-2022" joint exercise in Belarus on February 10.
+        European countries have sought to de-escalate the situation by conducting shuttle diplomacy while demanding that Russia withdraw its troops. At the end of January, France, Germany, Russia and Ukraine resumed the "Normandy model" talks. In early February, French President Emmanuel Macron visited Russia and Ukraine, and German Chancellor Olaf Scholz visited the United States, Ukraine and Russia.
+      </p><br>
+    </div>
+
+    <div class="w3-col m6 w3-padding-large w3-hide-small" style="padding-top: 110px!important;">
+     <img src="img/ukr6.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="700" height="900">
+     <br><p></p>
+     <img src="img/ukr3.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="700" height="900">
+     <p></p>
+     <img src="img/ukr5.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="700" height="900">
+     <p></p><br><br>
+    </div>
+
+    <div class="w3-col m6 w3-padding-large w3-hide-small" style="padding-top: 110px!important;">
+     <img src="img/ukr2.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="700" height="900">
+     <p></p>
+     <img src="img/ukr4.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="700" height="900">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h4 class="w3-center">Break out</h4><br>
+      <hr>
+      <p class="w3-large">
+        On February 17, the "Luhansk People's Republic" and "Donetsk People's Republic" civilian armed forces and Ukrainian government forces engaged in artillery battle. On The 18th, the leaders of the two regions said that the evacuation of local residents to Russia began on a large scale. The southern Russian state of Rostov declared a state of emergency Wednesday as the number of refugees from eastern Ukraine continues to increase.</p>
+      <p class="w3-large">
+        On February 19, the Ukrainian government said two soldiers were killed in a firefight with rebels in eastern Ukraine. Russia's military says it has killed "saboteurs" who infiltrated the country from Ukraine. Ukraine denies the claim.</p>
+      <p class="w3-large">
+        On February 21, the Security Council of the Russian Federation held a meeting on the situation in eastern Ukraine. Putin then signed an order recognizing the "Donetsk People's Republic" and "Luhansk People's Republic," ordering the Russian Foreign Ministry to discuss establishing diplomatic relations with the two "republics," and ordering the Russian state armed forces to guarantee peace in both places.</p>
+      <p class="w3-large">
+        On February 24, 2022, Ukrainian authorities announced the closure of the country's airspace, Ukrainian President Zelensky said that the whole country will enter a state of war, the capital of Kiev subway free of charge, subway stations will be used as bomb shelters; Russian forces began shelling Ukrainian troops in the east and military command centers and airports in other areas. The Ukrainian National Guard headquarters was destroyed. On February 24th Ukraine announced it was cutting off diplomatic relations with Russia. On February 24, Ukrainian border forces said Russian troops had entered the Kiev area. On February 24, local time, the Kiev municipal government issued an air defense alert, telling everyone to immediately go to the civil defense shelters. The mayor of Kiev, Ukraine, announced Thursday that the city's subway was turned into a shelter and no transport service would be provided. Ukraine closed its consulate general in St. Petersburg, Russia, on March 2. A Russian air strike on the Yavorovsky training ground in Lviv killed 9 people and injured 57 others in the early morning of March 13. On May 3, Russian forces destroyed an arms depot containing missiles and drones used by the United States and Europe to aid Ukraine.
+      </p><br>
+
+    </div>
+  </div>
+
+  <hr>
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a title="WAR AND PEACE" target="_blank" class="w3-hover-text-green">war and pease</a></p>
+</footer>
+
+</body>
+</html>

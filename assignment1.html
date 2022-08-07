@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WAR AND HUMANITY</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  .navbar{
+    overflow: hidden;
+    padding-left: 50px;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+  }
+
+  .navbar a{
+    float: left;
+    color: white;
+    /* text-align: center; */
+    /* padding: 14px 16px; */
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  /* The mouse cursor appears gray when hovering over the navigation window */
+  .navbar a:hover{
+    background-color: grey;
+    color: black;  /* text color */
+  }
+
+  .main{
+    /* height: 1000px;  */
+    /* enable scrolling */
+  }
+
+  /* smooth scroll-behavior */
+  html{
+    scroll-behavior: smooth;
+  }
+
+  #mainHeader{
+    height: 185px;
+    /* background-color: #4E6891; */
+    background-color: #626773;
+    text-align: center;
+    font-family: fantasy;
+    padding-top: 40px;
+  }
+
+  #sectionA{
+    height: 100%;
+    background-color: #43474F;
+    padding: 80px 70px;
+  }
+
+  #sectionB{
+    height: 100%;
+    background-color: #43474F;
+    padding: 80px 70px;
+  }
+
+  #sectionC{
+    height: 100%;
+    background-color: #43474F;
+    padding: 80px 70px;
+  }
+
+  #sectionD{
+    height: 100%;
+    background-color: #43474F;
+    padding: 80px 70px;
+  }
+
+  #sectionE{
+    /* height: 50%; */
+    /* background-color: white; */
+    background-color: #43474F;
+    /* padding-top: 40; */
+    padding-bottom: 0;
+    /* box-sizing: border-box; */
+    /* height: 100vh; */
+  }
+
+  #img1{
+    height: 450px;
+  }
+
+  #color1{
+    color: black;
+  }
+
+  #color2{
+    color: #EFF3F6;
+  }
+
+  #color3{
+    color: #4563BF;
+  }
+
+  #color4{
+    /* color: #FAD83D; */
+    color: #E1E5EB;
+  }
+
+  #color5{
+    color: #002BEB;
+  }
+
+  #myVideo{
+    padding-top: 38px;
+    width: 100%;
+    /* transform: translate(-50%,-50%); */
+  }
+
+  h1,h2,h3,h4,h5{
+    font-family: "Times New Roman", Georgia, Serif;
+
+  }
+
+  p{
+    font-size: 22px;
+    /* color: #FAD83D; */
+    font-family: "Times New Roman", Georgia, Serif;
+  }
+
+  a{
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  button{
+    padding: 20px;
+    border: 25px;
+  }
+
+  body{
+    background-color: white;
+    font-family: "Times New Roman", Georgia, Serif;
+  }
+
+  .button {
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button1 {
+    background-color: grey;
+    color: black;
+    border: 2px solid #4CAF50;
+  }
+
+  .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+
+  /* search bar */
+  .topnav {
+  overflow: hidden;
+  /* background-color: #e9e9e9; */
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: #2196F3;
+    color: white;
+  }
+
+  .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    /* margin-top: 8px;
+    margin-right: 16px; */
+    border: none;
+    font-size: 17px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+
+    .topnav input[type=text] {
+      border: 1px solid #ccc;
+    }
+  }
+
+  /* slidenav */
+  #mySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+  }
+
+  #mySidenav a:hover {
+    left: 0;
+  }
+
+  #about {
+    top: 20px;
+    background-color: #04AA6D;
+  }
+
+  #blog {
+    top: 80px;
+    background-color: #2196F3;
+  }
+
+  #projects {
+    top: 140px;
+    background-color: #f44336;
+  }
+
+  #contact {
+    top: 200px;
+    background-color: #555
+  }
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 25px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 12px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+  </style>
+</head>
+<body>
+
+  <!-- back button -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- website icon -->
+  <a class="w3-bar-item w3-button">War and Peace </a>
+  <p>ddd</p>
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#sectionE">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#sectionA">History</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#sectionB">Picture</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#sectionC">Art</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#sectionD">Blog</a>
+      </li>
+
+    </ul>
+    <!-- search bar -->
+    <!-- refrence:https://www.w3schools.com/howto/howto_css_searchbar.asp -->
+    <div class="topnav">
+      <div class="search-container">
+        <!-- link to php -->
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit" style="padding:7.4px">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- <div class="container mt-4"> -->
+  <div class="row">
+    <div class="col-sm-14"><br>
+
+      <!-- section E -->
+      <div id="sectionE">
+        <div class="p-5 bg-primary text-white text-center" style="background-image: url('img/nowar.jpg');">
+          <p></p><br><br><br><br><br><br><br><br><br>
+
+        </div>
+
+        <div id="mainHeader">
+          <b style="font-size: 30px; font-family: "Times New Roman", Georgia, Serif;">War and Peace . com</b>
+          <h3>AWERENESS ABOUT WAR AND HUMANITY</h3>
+          <i><h5>A historic and informative website</h5><br><br></i>
+        </div>
+
+        <!-- reference: https://www.w3schools.com/howto/howto_css_sidenav_buttons.asp -->
+        <div id="mySidenav" class="sidenav" style="position: fixed;">
+          <a href="#sectionA" id="about">History</a>
+          <a href="#sectionB" id="blog">Picture</a>
+          <a href="#sectionC" id="projects">Art</a>
+          <a href="#sectionD" id="contact">Blog</a>
+        </div>
+
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+          </div>
+
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="ukraine.html">
+                  <img src="img/ukraine.jpg" alt="Ukraine War" class="d-block" style="height:280px; width:100%">
+                </a>
+                <p style="padding-left:7px; font-family:fantasy">Ukraine War</p>
+              </div>
+
+            <div class="carousel-item">
+              <a href="afghanistan.html">
+                <img src="img/afghanistan.jpg" alt="Afghanistan War" class="d-block" style="height:280px; width:100%">
+              </a>
+              <p style="padding-left:7px; font-family:fantasy">Afghanistan War</p>
+            </div>
+
+            <div class="carousel-item">
+              <a href="kosovo.html">
+                <img src="img/kosovo1.png" alt="Kosovo War" class="d-block" style="height:280px; width:100%">
+              </a>
+              <p style="padding-left:7px; font-family:fantasy">Kosovo War</p>
+            </div>
+            <div class="carousel-item">
+              <a href="syria.html">
+                <img src="img/syria.jpg" alt="Syria War" class="d-block" style="height:280px; width:100%">
+              </a>
+              <p style="padding-left:7px; font-family:fantasy">Syria War</p>
+            </div>
+            <div class="carousel-item">
+              <a href="iraq.html">
+                <img src="img/iraq.jpg" alt="Iraq War" class="d-block" style="height:280px; width:100%">
+              </a>
+              <p style="padding-left:7px; font-family:fantasy">Iraq War</p>
+            </div>
+
+
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+
+
+        <!-- new add -->
+        <div class="container mt-5" style="margin-top: 1.5rem!important;">
+          <div class="row">
+
+            <div class="col-sm-4">
+              <p></p>
+              <h2 class="mt-5">History</h2>
+              <hr>
+              <a href="#sectionA">
+                <img src="img/paris.jpeg" alt="Date a live" height="250" width="100%">
+              </a>
+
+            </div>
+
+            <div class="col-sm-4">
+              <p></p>
+              <h2 class="mt-5">Pictures</h2>
+              <hr>
+              <a href="#sectionB">
+                <img src="img/modern war.png" alt="Date a live" height="250" width="100%">
+              </a>
+
+            </div>
+
+            <div class="col-sm-4">
+              <p></p>
+              <h2 class="mt-5">Arts</h2>
+              <hr>
+              <a href="#sectionC">
+                <img src="img/picaso.jpg" alt="Date a live" height="250" width="100%">
+              </a>
+              <p></p>
+            </div>
+
+            <!-- Youtube video display -->
+            <p></p><br><br><br>
+            <iframe width="500" height="550" src="https://www.youtube.com/embed/bdxHp0zML4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          </div>
+        </div>
+    </div>
+
+
+
+      <!-- section A -->
+      <div class="main">
+        <div id="sectionA">
+          <hr>
+          <b id="color4" style="font-size: 30px; font-family: "Times New Roman", Georgia, Serif;">History</b>
+          <p></p>
+          <img style="height:300px" src="img/WW2.jpg" alt="Date a live Home" >
+
+
+          <p></p>
+          <p id="color4">War is an intensive armed conflict between states, political entities, ethnic groups or paramilitary organizations (eg mercenaries, militias ). Wars are characterized by extreme violence, aggression, destruction, and casualties, involving regular or irregular armies.
+            In state-to-state wars, wars are also seen as extreme means of politics and diplomacy , as it is often the politicians rather than the soldiers who trigger the war.
+
+            In human society, war is often closely related to politics and is an organized armed conflict between multiple organizations and organizations. Clausewitz believes that "war is the continuation of politics". Using force as a means, the purpose is to force one party to obey the will of the other party (usually political intentions), and make the enemy lose the strength of resistance through many large-scale confrontations, such behavior is war. The art of war is the way of fighting in war, and the absence of war is called peace .
+
+            Some scholars do not agree that war must be related to politics, and some wars appear earlier than politics and countries. Therefore, John Keegan believes that Clausewitz's definition is limited and only applicable to civilized society. Society is culture itself ”.
+
+            The deadliest war in history was World War II, with between 60 million and 85 million dead.</p>
+            <p></p><br>
+            <!-- table -->
+            <table class="table">
+
+              <thead>
+                <tr class="table-dark">
+                  <th>War</th>
+                  <th>Time</th>
+                  <th>Main country</th></tr>
+              </thead>
+
+              <tbody>
+
+                <tr class="table-primary">
+                  <td>Ukrain war</td>
+                  <td>2021-</td>
+                  <td>Ukraine, Russia</td>
+                </tr>
+                <tr class="table-danger">
+                  <td>Syria War</td>
+                  <td>2011-</td>
+                  <td>America, Russia, Turkey, Iran, Arabia..</td>
+                </tr>
+                <tr class="table-info">
+                  <td>Iraq War</td>
+                  <td>2003-2011</td>
+                  <td>Iraq, America, Britain, Australia, Poland, South Korea, Ukraine, Italy..</td>
+                </tr>
+                <tr class="table-warning">
+                  <td>Afghanistan War</td>
+                  <td>2001-2021</td>
+                  <td>Afghanistan, NATO</td>
+                </tr>
+                <tr class="table-success">
+                  <td>Kosovo War</td>
+                  <td>1998-1999</td>
+                  <td>Federal Republic of Yugoslavia (Serbia), NATO, Albania</td>
+                </tr>
+
+              </tbody>
+            </table>
+            <b id="color4" style="font-size:18px">(Above we've listed some of the most influential and famous wars in modern history)</b>
+
+        </div>
+      </div>
+
+      <!-- section B -->
+      <div class="main">
+        <div id="sectionB">
+          <hr>
+          <b id="color4" style="font-size: 30px; font-family: "Times New Roman", Georgia, Serif;">Picture</b>
+          <h5 id="color4">Some pictures about the modern war:</h5><br>
+
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="img/p1.png" alt="Date a live" height="220" width="400">
+            </div>
+
+            <div class="col-sm-4">
+              <img src="img/p2.png" alt="Date a live" height="220" width="400">
+            </div>
+
+            <div class="col-sm-4">
+              <img src="img/iraq6.png" alt="Date a live" height="220" width="400">
+            </div>
+
+            <p></p><br>
+
+            <div class="col-sm-4">
+              <img src="img/p3.png" alt="Date a live" height="220" width="400">
+            </div>
+
+            <div class="col-sm-4">
+              <img src="img/p4.png" alt="Date a live" height="220" width="400">
+            </div>
+
+            <div class="col-sm-4">
+              <img src="img/p5.png" alt="Date a live" height="220" width="400">
+            </div>
+
+          </div>
+          <p></p>
+          <button type="button" class="btn btn-outline-warning"><a href="https://www.gettyimages.hk/%e5%9c%96%e7%89%87/ukraine-war?assettype=image&page=5&phrase=ukraine%20war&sort=mostpopular&suppressfamilycorrection=true&license=rf%2Crm">Ukraine War</a></button>
+          <button type="button" class="btn btn-outline-primary"><a href="https://www.gettyimages.hk/%e5%9c%96%e7%89%87/afghanistan-war?assettype=image&phrase=afghanistan%20war&sort=mostpopular&license=rf%2Crm">Afghanistan War</a></button>
+          <button type="button" class="btn btn-outline-success"><a href="https://www.gettyimages.hk/%E5%9C%96%E7%89%87/kosovo-war">Kosovo War</a></button>
+          <button type="button" class="btn btn-outline-info"><a href="https://www.gettyimages.hk/%E5%9C%96%E7%89%87/syria-war?assettype=image&editorialproducts=archival&phrase=syria%20war&sort=mostpopular&license=rf,rm&family=creative,editorial&suppressfamilycorrection=true">Syria War</a></button>
+          <button type="button" class="btn btn-outline-secondary"><a href="https://www.gettyimages.hk/%e5%9c%96%e7%89%87/iraq-war?assettype=image&phrase=Iraq%20War&sort=mostpopular&suppressfamilycorrection=true&license=rf%2Crm&page=2">Iraq War</a></button>
+          <!-- <button type="button" class="btn btn-outline-danger">Danger</button>
+          <button type="button" class="btn btn-outline-dark">Dark</button>
+          <button type="button" class="btn btn-outline-light text-dark">Light</button> -->
+          <p></p>
+          <p id="color4">Here we list some famous and influential wars in modern history, hoping that through these wars, watching these people suffering in the war, their actions and cries, and the impact of war on their homeland, can bring some thoughts and inspirations to our readers about war and peace.</p>
+
+        </div>
+      </div>
+
+      <!-- section C -->
+      <div class="main">
+        <div id="sectionC">
+          <hr>
+          <b id="color4" style="font-size: 30px; font-family: "Times New Roman", Georgia, Serif;">Art</b><br>
+          <h5 id="color4">Some work of art that is critical but philosophical:</h5><br>
+          <img src="img/art1.jpg" alt="News" height="400" width="750">
+          <p></p>
+          <p id='color4'>I covered the body behind the soldier with the Australian flag and wrapped a corner of the flag around the Afghan boy's head. "I have the boy holding the lamb's baby in his arms," he said. "It contrasts with the color, so that when the reader sees the painting, he will notice the lamb first and then the boy with the knife held to his throat.
+
+          I also designed an effect of the blue of the Australian flag 'swallowing' the red of the Afghan flag, which is also a kind of allusion to the reality of some countries in Afghanistan, such as the US and Australia." He said his original intention is to fully reflect the reality of the work and cause the audience to reflect. "What I have drawn looks absurd, but it is a real picture of something that happened somewhere in the world. I hope more people will see this painting and pay attention to this tragedy that really happened."<br>
+        </div>
+      </div>
+
+
+
+      <!-- section D -->
+      <div height="1200px">
+        <div id="sectionD">
+          <hr>
+          <b id="color4" style="font-size: 30px; font-family: "Times New Roman", Georgia, Serif;">Blog</b>
+          <!-- <h5 id="color4">Some comments and thoughts of people:</h5> -->
+          <a href="blog.html">
+            <button style="float:right" class="button button1">See More</button><br>
+          </a>
+
+          <ul class="w3-ul w3-hoverable">
+            <hr style="color:white">
+            <li class="w3-padding-large">
+              <img src="img/blog4.png" alt="Image" class="w3-left w3-margin-right" style="width:200px">
+              <span class="w3-text-white" style="font-size:25px">Quick Take: An Explosion in Beirut</span><br>
+              <span class="w3-text-blue" style="font-size:20px">A massive explosion has rocked Beirut at a critical time in Lebanon's history. In this quick take I share some concerns about what could happen next.</span>
+              <p></p><br>
+            </li>
+            <li class="w3-padding-large">
+              <img src="img/blog2.png" alt="Image" class="w3-left w3-margin-right" style="width:200px">
+              <span class="w3-text-white" style="font-size:25px">The Lincoln Project: Mourning in America</span><br>
+              <span class="w3-text-blue" style="font-size:20px">Donald Trump’s failed presidency has left the nation weaker, sicker, and teetering on the verge of a new Great Depression. There’s mourning in America.</span>
+              <p></p><br>
+            </li>
+            <li class="w3-padding-large">
+              <img src="img/blog1.png" alt="Image" class="w3-left w3-margin-right" style="width:200px">
+              <span class="w3-text-white" style="font-size:25px">Staying Sane in an Insane World</span><br>
+              <span class="w3-text-blue" style="font-size:20px">We're not meant to be heads down in the worst content (and viewpoints) that man has to offer dozens of hours per week year after year..</span>
+              <p></p><br>
+            </li>
+            <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+              <img src="img/blog3.png" alt="Image" class="w3-left w3-margin-right" style="width:200px">
+              <span class="w3-text-white" style="font-size:25px">The Friday Night Massacre</span><br>
+              <span class="w3-text-blue" style="font-size:20px">In America war criminals are celebrated and dutiful soldiers and diplomats are harassed and shown the door. It's not like we didn't see this coming..</span>
+              <p></p><br>
+            </li>
+            <p></p>
+          </ul><br>
+
+        </div>
+      </div>
+      <!-- end of section D -->
+
+    </div>
+  </div>
+</div>
+
+
+
+ <!-- footer -->
+<div class=" p-2 bg-dark text-white text-center">
+  <p>War and Peace. Created by Chen nuo. June 16, 2022</p>
+</div>
+
+</body>
+</html>

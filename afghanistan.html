@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Afghanistan War Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+  body {
+    font-family: "Times New Roman", Georgia, Serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+  }
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 25px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 12px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+</style>
+</head>
+<body>
+
+  <!-- back button -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="assignment1.html" class="w3-bar-item w3-button">War and Peace</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="blog.html" class="w3-bar-item w3-button">Blog</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="img/afg1.png" alt="Hamburger Catering" width="1600" height="800">
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small" style="padding-top: 300px!important;">
+     <img src="img/911.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="700" height="900">
+    <p></p><br>
+     <img src="img/afg3.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="700" height="900">
+
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Afghanistan War(2001-2021)</h1><br><br><br>
+      <h4 class="w3-center">The Spark</h4><br>
+      <hr>
+      <p class="w3-large">
+      On September 11, 2001, when aL Qaeda hijacked civilian airliners and crashed them into the north and south towers of the World Trade Center in New York, the Taliban offered protection to osama bin Laden, the alleged mastermind. The incident came two days after the assassination of Baitullah Mehsud, the leader of the Northern League. At the time, the NATIONAL Security Council decided that military action was necessary against the Taliban regime in Afghanistan. A week before the war, US President George W. Bush issued an ultimatum to the Taliban government, demanding:</p>
+      <p>• Turn over top Al Qaeda operatives to the United States</p>
+      <p>• Release all imprisoned foreigners</p>
+      <p>• Protect foreign journalists, diplomats and support personnel in Afghanistan></p>
+      <p>• Have U.S. personnel inspect all training camps and verify that they are closed></p>
+      <p class="w3-large">
+      The Taliban government has refused to talk to the United States, calling it an insult to talk to non-Muslim leaders. But they also demanded through their embassy in Pakistan that the United States provide evidence to allow them to prosecute bin Laden in Islamic courts on their own. They later offered to transfer bin Laden to a neutral country, but Bush rejected those terms.</p>
+      <p class="w3-large">
+      On Dec. 19, 2000, the U.N. Security Council demanded that the Taliban transfer Bin Laden to the United States or a third country to face prosecution for the 1998 U.S. embassy bombing, as well as close all militant training camps or face sanctions against Afghanistan. On September 12, 2001, the United Nations Security Council unanimously adopted Security Council Resolution 1368, condemning the terrorist attacks of September 11, 2001 in the United States as a threat to international peace and security, Authorizes all means to combat threats to international peace and security posed by acts of terrorism. Later, the UN Security Council unanimously adopted Resolution 1373, calling for urgent cooperation among countries to prevent and deter acts of terrorism.</p>
+      <br>
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+
+      <h4 class="w3-center">Break out</h4><br>
+      <hr>
+      <p class="w3-large">
+        The original goal of the NATO coalition was to capture Bin Laden and punish the Taliban for supporting them, and then to eliminate terrorist targets. American and NATO forces initially stormed Kabul, overthrew the Taliban emirate and established a republic. After the invasion of the capital, however, the coalition forces had to maintain large numbers of troops to support the Republican government in the face of continued guerrilla warfare and terrorist attacks by the Taliban in the remote Afghan countryside, which the coalition and the Republican government had no control over.</p>
+        <p class="w3-large">
+        In December 2009, newly inaugurated US President Barack Obama announced an increase of 30,000 troops over a six-month period, bringing the total number of coalition forces in Afghanistan to 100,000. Until May 2011, the U.S. launched a decapitation strike, finally killed the al-qaeda leader osama bin laden, and said in July to gradually withdraw from the main body, make the area's soldiers fell to about 2000 people in 2015, but found that the terrorist attacks and the taliban are still continue to have influence, frustrated the parties's anti-terrorist operations for a long time.</p>
+        <p class="w3-large">
+        After President Donald Trump took office in 2017, he sent an additional 4,000 troops to Afghanistan to counter taliban and Islamic State activities, bringing the total number of coalition troops back to 13,000. After 20 years of trying to keep the regime alive, the United States will finally withdraw in 2021. Immediately after the withdrawal of American troops, the Taliban launched a fierce offensive to defeat the Republican army, and finally disintegrated the Republic to regain power and win the final victory.</p>
+        <p class="w3-large">
+        On the political level, the US has been negotiating with terrorist groups such as the Taliban that maintain resistance since the Obama administration. In 2020, the United States signed the Doha agreement with the Taliban to reduce its military presence to 8,000. The following July, the Taliban launched a major offensive as the last coalition troops left Afghanistan. Finally, the Taliban captured Kabul on 15 August and took control of the provinces held by the remnants of the Republic, the Afghan National Resistance Front (NRA), on 6 September.</p><br>
+    </div>
+
+    <div class="w3-col m6 w3-padding-large w3-hide-small" style="padding-top: 110px!important;">
+     <img src="img/afg6.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="700" height="900">
+     <br><p></p>
+     <img src="img/afg5.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="700" height="900">
+     <p></p>
+     <img src="img/afg4.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="700" height="900">
+     <p></p><br><br>
+    </div>
+
+    <div class="w3-col m6 w3-padding-large w3-hide-small" style="padding-top: 110px!important;">
+     <img src="img/afg7.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="700" height="900">
+     <p></p>
+     <img src="img/afg8.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="700" height="900">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h4 class="w3-center">Influence</h4><br>
+      <hr>
+      <p class="w3-large">
+        Since the withdrawal of most NATO troops in 2013 and 2014, fighting between Afghan insurgents and government forces has intensified, terrorism has intensified, and civilian casualties have risen, many of them women and children. Tens of thousands of refugees have made their way to Europe in search of a new world, but European countries remain divided on the issue, with some countries encouraging the return of refugees by sending them home or offering them return allowances, which has been controversial across the continent. Germany rejected a total of 82,358 Asylum applications from Afghan refugees between 2015 and the end of 2017. In January 2013, the United Nations estimated that there were 547,550 internally displaced persons, a 25 percent increase from the estimated 447,547 internally displaced persons in January 2012. In 2019, Pakistan and Iran were among the world's leading refugee-hosting countries, hosting an estimated 4 million refugees from Afghanistan.</p>
+      <p class="w3-large">
+        In January-March 2019, foreign and Afghan forces killed more civilians than the Taliban and other armed groups, for the first time since the start of the war in Afghanistan.</p>
+      <p class="w3-large">
+        In November 2020, the Australian defence force chief inspector Paul bretton, according to the report published between 2005 and 2016, 25 Australia and former special forces soldiers in active service (mostly) for airborne battlezone members allegedly involved in 23 illegal killing incidents in Afghanistan, in 39 innocent civilians and prisoners were killed, another 2 people abuse.</p>
+      <p class="w3-large">
+        As of 2021, more than 100,000 Afghan civilians were killed or injured.</p><br>
+
+    </div>
+  </div>
+
+  <hr>
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a title="WAR AND PEACE" target="_blank" class="w3-hover-text-green">war and pease</a></p>
+</footer>
+
+</body>
+</html>
